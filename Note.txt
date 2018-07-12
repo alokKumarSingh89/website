@@ -1,0 +1,3 @@
+onclick property on dom is similler to addEventLister but event added by addEventListener is 
+remove by removeEventListener and we can add multiple event handle for same event by addEventListener 
+but onclick is not possible
