@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isometric</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #00b928;
+        }
+        .isometric{
+            width: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #00c32a;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-30deg) skew(30deg,0deg);
+            border: 1px solid rgba(0, 0, 0, .2)
+        }
+        .isometric p{
+            color: #02ff75;
+            font-size: 20px;
+            font-family: arial;
+            text-align: justify;
+        }
+        .isometric h1{
+            position: relative;
+            color: #fff;
+            font-size: 48px;
+            font-family: arial;
+            text-align: justify;
+            transform-origin: bottom;
+            transform: skew(-50deg);
+            text-shadow: -1px -1px 0 #ccc,-2px -2px 0 #ccc,-3px -3px 0 #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="isometric">
+        <h1>ISOMETRIX TEXT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias earum a dolorum, porro perferendis rerum recusandae sunt sequi placeat in sed excepturi ducimus velit harum quisquam incidunt maxime aspernatur reiciendis.</p>
+    </div>
+</body>
+</html>

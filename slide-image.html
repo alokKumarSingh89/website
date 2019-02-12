@@ -1,0 +1,68 @@
+
+<html>
+
+        <head>
+            <title>Box Model Web</title>
+            <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            rel="stylesheet" crossorigin="anonymous">
+            <style>
+                body{
+                    background: #1c363e;
+                    margin: 0;
+                    padding: 0;
+        
+                }
+                .imageBox{
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    background: #000;
+                    border-radius: 10px;
+                    box-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+                    overflow: hidden;
+                    transform: translate(-50%,-50%);
+                }
+                .imageBox img{
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s;
+                }
+                .imageBox .textBox{
+                    position: absolute;
+                    bottom: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: #7986cb;
+                    box-sizing: border-box;
+                    padding: 15px 10px;
+                    font-family: arial;
+                    font-size: 14px;
+                    transition: .5s;
+                }
+                .imageBox .textBox p{
+                    padding: 0;
+                    margin: 0;
+                    color: #fff;
+                }
+                .imageBox:hover .textBox{
+                    bottom: -65%;   
+                }
+                .imageBox:hover .img{
+                    transform: translateY(-35%);   
+                }
+            </style>
+        </head>
+        
+        <body>
+           <div class="imageBox">
+               <img src="/images/forth.jpg" alt="">
+               <div class="textBox">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque nemo, doloremque perferendis similique nostrum numquam at sed vel quis laborum distinctio deleniti, vitae voluptate, et expedita obcaecati iusto. Quam?</p>
+               </div>
+           </div>
+        </body>
+        
+        </html>

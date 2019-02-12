@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Skewed Background </title>
+    <style>
+        body{
+            background: #262626;
+            margin: 0;
+            padding: 0;
+        }
+        .skewedBox{
+            background: #edff57;
+            padding: 100px 0;
+            transform: skew(0deg,-10deg) translateY(-127px);
+
+        }
+        .container{
+            padding: 150px 200px;
+            transform: skew(0deg,10deg);
+        }
+        .container h1{
+            margin: 0;
+            padding: 20px 0;
+            font-size: 3rem;
+        }
+        .container p{
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+            width: 80%;
+        }
+        .sec2{
+            padding: 0 200px 150px;
+            color: #fff;
+            font-family: arial;
+            text-align: right;
+        }
+        .sec2 h1{
+            margin: 0;
+            padding: 20px 0;
+            font-size: 3rem;
+        }
+        .sec2 p{
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="skewedBox">
+        <div class="container">
+            <h1>Online Tutorial</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus facere inventore impedit,
+                consectetur accusamus nobis non beatae alias, velit, asperiores fugiat maiores. Doloribus fugit,
+                tempore ex incidunt iure obcaecati!</p>
+
+        </div>
+    </section>
+    <section class="sec2">
+        <h1>Please use it</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus facere inventore impedit,
+            consectetur accusamus nobis non beatae alias, velit, asperiores fugiat maiores. Doloribus fugit, tempore ex
+            incidunt iure obcaecati!</p>
+
+
+    </section>
+</body>
+
+</html>

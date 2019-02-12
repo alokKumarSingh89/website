@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Div Pointer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #3070ff;
+        }
+        .container{
+            width: 500px;
+            height: 300px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 20px;border: 2px solid #fff;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        .container:before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            bottom: 0;
+            left: 50%;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: translate(-50%,18px) rotate(45deg);
+            background: #3070ff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Please See this</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex vitae inventore pariatur incidunt ab, quidem beatae, exercitationem non alias aperiam a nulla officia, earum delectus provident quisquam accusamus atque.</p>
+    </div>
+
+</body>
+</html>
