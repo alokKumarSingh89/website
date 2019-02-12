@@ -1,0 +1,41 @@
+body{
+    background-image: url(../images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.all-selector > h2 ~ p{
+    color: green
+}
+.heading{
+    font-size: 24px;
+    color: #000;
+    background: #ccc;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 0 auto;
+}
+.card{
+    width: 30%;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px #fffafa70;
+    border-radius: 0.2rem;
+    
+}
+.card-header{
+    color: #5076ea;
+    text-transform: uppercase;
+}
+
+
+/* next selector */
+.next-selector >h2 + p{
+    color: red;
+    word-spacing: 20px;
+    text-align: justify;
+}
